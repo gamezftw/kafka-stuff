@@ -1,0 +1,6 @@
+kafkactl create topic "discount-profiles-by-user" --config "cleanup.policy=compact"
+kafkactl create topic "discounts" --config "cleanup.policy=compact"
+kafkactl create topic "orders"
+kafkactl create topic "payments"
+kafkactl create topic "paid-orders"
+kafkactl create topic "orders-by-user"

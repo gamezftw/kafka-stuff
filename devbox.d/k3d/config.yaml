@@ -1,0 +1,21 @@
+# k3d configuration file, saved as e.g. /home/me/myk3dcluster.yaml
+apiVersion: k3d.io/v1alpha5 # this will change in the future as we make everything more stable
+kind: Simple # internally, we also have a Cluster config, which is not yet available externally
+metadata:
+  name: mycluster # name that you want to give to your cluster (will still be prefixed with `k3d-`)
+# servers: 1 # same as `--servers 1`
+# agents: 1 # same as `--agents 2`
+image: rancher/k3s:v1.34.3-k3s1 # same as `--image rancher/k3s:v1.20.4-k3s1`
+ports:
+  - port: 8080:80 # same as `--port '8080:80@loadbalancer'`
+    nodeFilters:
+      - loadbalancer
+  # - port: 39092:9094 # same as `--port '8080:80@loadbalancer'`
+  #   nodeFilters:
+  #     - server:0
+  # - port: 30000-32767:30000-32767
+  #   nodeFilters:
+  #     - server:0
+
+
+      

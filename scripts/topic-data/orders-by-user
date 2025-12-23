@@ -1,0 +1,2 @@
+Daniel|{"orderId":"order1","user":"Daniel","products":[ "iPhone 13","MacBook Pro 15"],"amount":4000.0 }
+Riccardo|{"orderId":"order2","user":"Riccardo","products":["iPhone 11"],"amount":800.0}
