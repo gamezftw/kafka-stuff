@@ -4,7 +4,7 @@
     "COURSIER_BIN_DIR": "$DEVBOX_PROJECT_ROOT/bin/coursier/",
     "KAFKA_CTL_CONFIG": "$DEVBOX_CONFIG_DIR/kafkactl/config.yml",
     "KUBECONFIG":       "$DEVBOX_CONFIG_DIR/kube/config",
-    "PATH":             "$DEVBOX_PROJECT_ROOT/bin/coursier/:${PATH}",
+    "PATH":             "$DEVBOX_PROJECT_ROOT/bin/:$DEVBOX_PROJECT_ROOT/bin/coursier/:${PATH}",
   },
   "packages": [
     "scala@latest",
