@@ -155,7 +155,7 @@ object KafkaStreams extends App {
 
   val props = new Properties()
   props.put(streams.StreamsConfig.APPLICATION_ID_CONFIG, "orders-application")
-  props.put(streams.StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
+  props.put(streams.StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:39094")
   props.put(
     streams.StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG,
     streams.scala.serialization.Serdes.stringSerde.getClass

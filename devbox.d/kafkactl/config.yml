@@ -1,4 +1,4 @@
 contexts:
   default:
     brokers:
-      - localhost:39094
+      - 'localhost:39094'
