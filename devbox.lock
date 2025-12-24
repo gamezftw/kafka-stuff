@@ -50,8 +50,8 @@
       }
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2025-12-22T13:40:18Z",
-      "resolved": "github:NixOS/nixpkgs/3a7affa77a5a539afa1c7859e2c31abdb1aeadf3?lastModified=1766410818&narHash=sha256-ruVneSx6wFy5PMw1ow3BE%2Bznl653TJ6%2BeeNUj4B%2F9y8%3D"
+      "last_modified": "2025-12-23T06:39:02Z",
+      "resolved": "github:NixOS/nixpkgs/cfc52a405c6e85462364651a8f11e28ae8065c91?lastModified=1766471942&narHash=sha256-Wv%2BxrUNXgtxAXAMZE3EDzzeRgN1MEw%2BPnKr8zDozeLU%3D"
     },
     "jdk@17.0.12": {
       "last_modified": "2025-10-22T20:59:19Z",
@@ -137,17 +137,51 @@
         }
       }
     },
-    "kafkactl": {
-      "resolved": "github:NixOS/nixpkgs/7d853e518814cca2a657b72eeba67ae20ebf7059?narHash=sha256-l%2FYGrEpLromL4viUo5GmFH3K5M1j0Mb9O%2BLiaeCPWEM%3D#kafkactl",
-      "source": "nixpkg",
+    "kafkactl@latest": {
+      "last_modified": "2025-12-04T22:20:37Z",
+      "resolved": "github:NixOS/nixpkgs/bd88d6c13ab85cc842b93d53f68d6d40412e5a18#kafkactl",
+      "source": "devbox-search",
+      "version": "5.16.0",
       "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c66zpjqyp22fr2ih27wha34h40sabydw-kafkactl-5.16.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c66zpjqyp22fr2ih27wha34h40sabydw-kafkactl-5.16.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/a8w9whnv4s1wbzz9r9pxxcwkss26svfb-kafkactl-5.16.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/a8w9whnv4s1wbzz9r9pxxcwkss26svfb-kafkactl-5.16.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/blz0mhq7ygnrrpvc0j0xmvnamkk5xxgl-kafkactl-5.16.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/blz0mhq7ygnrrpvc0j0xmvnamkk5xxgl-kafkactl-5.16.0"
+        },
         "x86_64-linux": {
           "outputs": [
             {
+              "name": "out",
               "path": "/nix/store/pc1fgrlw81fi0qv5rw9r3dfgh2cxqbha-kafkactl-5.16.0",
               "default": true
             }
-          ]
+          ],
+          "store_path": "/nix/store/pc1fgrlw81fi0qv5rw9r3dfgh2cxqbha-kafkactl-5.16.0"
         }
       }
     },
@@ -232,6 +266,102 @@
             }
           ],
           "store_path": "/nix/store/589b0djk7wn3k3chyzp9a6wi6al95wn1-kubectl-1.34.3"
+        }
+      }
+    },
+    "lunarvim@latest": {
+      "last_modified": "2025-12-19T06:18:24Z",
+      "resolved": "github:NixOS/nixpkgs/7d853e518814cca2a657b72eeba67ae20ebf7059#lunarvim",
+      "source": "devbox-search",
+      "version": "1.4.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/iqj7g60xlx3vjypvd8wsdl1wqs60zjwj-lunarvim-1.4.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/iqj7g60xlx3vjypvd8wsdl1wqs60zjwj-lunarvim-1.4.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hrbqa1daas633n8fdc7vsb3lxlcyhl89-lunarvim-1.4.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hrbqa1daas633n8fdc7vsb3lxlcyhl89-lunarvim-1.4.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/141m9nwsxb1b9ydna2fd8rz7dd88xmq6-lunarvim-1.4.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/141m9nwsxb1b9ydna2fd8rz7dd88xmq6-lunarvim-1.4.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xvz193fxdkj9kcsxhi0bbm01cx97f4p7-lunarvim-1.4.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xvz193fxdkj9kcsxhi0bbm01cx97f4p7-lunarvim-1.4.0"
+        }
+      }
+    },
+    "neovim@latest": {
+      "last_modified": "2025-12-18T02:44:17Z",
+      "resolved": "github:NixOS/nixpkgs/def3da69945bbe338c373fddad5a1bb49cf199ce#neovim",
+      "source": "devbox-search",
+      "version": "0.11.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8p2cxhz3jwd4w5vqrn2hfvihs61k57wr-neovim-0.11.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8p2cxhz3jwd4w5vqrn2hfvihs61k57wr-neovim-0.11.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0nw654bk4rqra85pyhb5vil04141zvsj-neovim-0.11.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0nw654bk4rqra85pyhb5vil04141zvsj-neovim-0.11.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/amqqdmzzpk6whm5kfjhfc1s6n34grb2q-neovim-0.11.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/amqqdmzzpk6whm5kfjhfc1s6n34grb2q-neovim-0.11.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/54zkiggy58af9lln6kmv1qbljz6qrh51-neovim-0.11.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/54zkiggy58af9lln6kmv1qbljz6qrh51-neovim-0.11.5"
         }
       }
     },
@@ -328,70 +458,6 @@
             }
           ],
           "store_path": "/nix/store/had4syw2pzzpxkhhd3g1zx49prwax52z-scala-3.3.6"
-        }
-      }
-    },
-    "zed-editor@latest": {
-      "last_modified": "2025-12-19T06:18:24Z",
-      "resolved": "github:NixOS/nixpkgs/7d853e518814cca2a657b72eeba67ae20ebf7059#zed-editor",
-      "source": "devbox-search",
-      "version": "0.217.3",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/hdm0wnh4x0fwjqb2xwbsiqzp6y6xlm1v-zed-editor-0.217.3",
-              "default": true
-            },
-            {
-              "name": "remote_server",
-              "path": "/nix/store/mallw4a102fg4dpzbsviidfd8zi75886-zed-editor-0.217.3-remote_server"
-            }
-          ],
-          "store_path": "/nix/store/hdm0wnh4x0fwjqb2xwbsiqzp6y6xlm1v-zed-editor-0.217.3"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/qk8ibb20y0mk7ijbbnk8zn6q8zs61n0g-zed-editor-0.217.3",
-              "default": true
-            },
-            {
-              "name": "remote_server",
-              "path": "/nix/store/1lak68bimxxk2l8wwrckzkpr8w2sxyhb-zed-editor-0.217.3-remote_server"
-            }
-          ],
-          "store_path": "/nix/store/qk8ibb20y0mk7ijbbnk8zn6q8zs61n0g-zed-editor-0.217.3"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/vbfg84calyjxc76jy6ybv3iqbapkn20z-zed-editor-0.217.3",
-              "default": true
-            },
-            {
-              "name": "remote_server",
-              "path": "/nix/store/dq37kxha35mw95drrrzfl598nmbfyqyd-zed-editor-0.217.3-remote_server"
-            }
-          ],
-          "store_path": "/nix/store/vbfg84calyjxc76jy6ybv3iqbapkn20z-zed-editor-0.217.3"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/drpjh2hg6616k9141hp6hdcaiw75g6q1-zed-editor-0.217.3",
-              "default": true
-            },
-            {
-              "name": "remote_server",
-              "path": "/nix/store/z1z513bqa9nar17z4j0fy9ii5y7s97s8-zed-editor-0.217.3-remote_server"
-            }
-          ],
-          "store_path": "/nix/store/drpjh2hg6616k9141hp6hdcaiw75g6q1-zed-editor-0.217.3"
         }
       }
     }
