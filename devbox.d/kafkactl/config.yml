@@ -2,3 +2,35 @@ contexts:
   default:
     brokers:
       - 'localhost:39094'
+  avro:
+    brokers:
+      - 'localhost:39095'
+    schemaRegistry:
+      url: localhost:8081
+
+  kafka-cluster:
+    brokers:
+      - test-cluster-kafka-bootstrap:9093
+    kubernetes:
+      enabled: true
+      binary: kubectl #optional
+      kubeContext: k3d-mycluster
+      namespace: kafka
+      tlsSecret: kafkactl
+      keepPod: true
+    tls:
+      enabled: true
+      ca: ca.crt
+      cert: user.crt
+      certKey: user.key
+      # set insecure to true to ignore all tls verification (defaults to false)
+      insecure: true
+
+  kafka-cluster-plain:
+    brokers:
+      - test-cluster-kafka-bootstrap:9092
+    kubernetes:
+      enabled: true
+      binary: kubectl #optional
+      kubeContext: k3d-mycluster
+      keepPod: true
