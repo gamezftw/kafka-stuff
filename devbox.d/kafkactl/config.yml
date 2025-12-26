@@ -25,6 +25,8 @@ contexts:
       certKey: user.key
       # set insecure to true to ignore all tls verification (defaults to false)
       insecure: true
+    schemaRegistry:
+      url: confluent-schema-registry:8081
 
   kafka-cluster-plain:
     brokers:

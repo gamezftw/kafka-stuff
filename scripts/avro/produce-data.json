@@ -1,0 +1,1 @@
+{"LongList":{"id":1,"value":"root","timestamp":1700000000000,"tags":["start","root"],"next":{"LongList":{"id":2,"value":"second","timestamp":1700000001000,"tags":["middle"],"next":{"LongList":{"id":3,"value":"third","timestamp":1700000002000,"tags":[],"next":{"LongList":{"id":4,"value":"fourth","timestamp":null,"tags":["end"],"next":null}}}}}}}}

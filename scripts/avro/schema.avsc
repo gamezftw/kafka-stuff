@@ -1,0 +1,11 @@
+{
+"type": "record",
+"name": "LongList",
+"fields": [
+{ "name": "id", "type": "long" },
+{ "name": "value", "type": "string" },
+{ "name": "timestamp", "type": ["null", { "type": "long", "logicalType": "timestamp-millis" }], "default": null },
+{ "name": "tags", "type": { "type": "array", "items": "string" }, "default": [] },
+{ "name": "next", "type": ["null", "LongList"], "default": null }
+]
+}
