@@ -5,3 +5,4 @@ helm/
 **/.kube/
 
 
+devbox.d/Code/*
