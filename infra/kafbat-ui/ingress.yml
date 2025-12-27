@@ -1,0 +1,28 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: strip-kafbat-ui-prefix
+spec:
+  stripPrefix:
+    prefixes:
+      - /kafbat-ui-kafka-ui
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kafbat-ui-ingress
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+    traefik.ingress.kubernetes.io/router.middlewares: kafka-strip-kafbat-ui-prefix@kubernetescrd
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /kafbat-ui-kafka-ui
+        pathType: Prefix
+        backend:
+          service:
+            name: kafbat-ui-kafka-ui
+            port:
+              number: 80

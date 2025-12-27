@@ -35,4 +35,5 @@ contexts:
       enabled: true
       binary: kubectl #optional
       kubeContext: k3d-mycluster
+      namespace: kafka
       keepPod: true

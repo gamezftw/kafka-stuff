@@ -8,5 +8,4 @@ spec:
   strimziVersion: v1
   listener: tls
   registryImageTag: "8.0.3"
-  serviceType: ClusterIP
-  # serviceType: NodePort
+  serviceType: NodePort

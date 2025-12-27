@@ -27,34 +27,14 @@ spec:
           type: group
           name: "*"
           patternType: literal
-        operations: 
-          - All
+        operations: [All]
         type: allow
       - resource:
           type: cluster
-        operations: 
-          - All
+        operations: [All]
         type: allow
       - resource:
           type: transactionalId
           name: "*"
           patternType: literal
-        operations: 
-          - All
-      # # Allow all operations on the schema-registry* group
-      # - resource:
-      #     type: group
-      #     name: schema-registry
-      #     patternType: prefix
-      #   operations: 
-      #     - All
-      #   type: allow
-      # # Allow Describe on the __consumer_offsets topic
-      # # (The official docs also mention DescribeConfigs?)
-      # - resource:
-      #     type: topic
-      #     name: __consumer_offsets
-      #     patternType: literal
-      #   operations: 
-      #     - Describe
-      #   type: allow
+        operations: [All]
